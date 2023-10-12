@@ -1,4 +1,3 @@
 Hello World again !  
 "Druga linia" 
-
 "Trzecia linia" 
