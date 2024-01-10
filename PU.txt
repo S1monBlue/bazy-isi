@@ -8,7 +8,59 @@ xlabel('x')
 ylabel('sin(x), cos(x)')
 title('Plot of sin(x) and cos(x)')
 legend('sin(x)','cos(x)',3)
+ZAD 13.2
+x = linspace(-2, 2, 1000); 
 
+y1 = exp(x);
+y2 = x.^3 + 4*x.^2 + 3*x + 5;
+y3 = log(2*x + 4) / log(5);
+y4 = 1 ./ x;
+y5 = log(x.^2);
+y6 = log(x);
+
+clf; 
+
+subplot(2, 3, 1); // Górny subplot
+plot(x, y1, 'LineWidth', 2);
+grid on;
+title('e^x');
+xlabel('x');
+ylabel('y');
+
+subplot(2, 3, 2);
+plot(x, y2, 'LineWidth', 2);
+grid on;
+title('x^3 + 4x^2 + 3x + 5');
+xlabel('x');
+ylabel('y');
+
+subplot(2, 3, 3);
+plot(x, y3, 'LineWidth', 2);
+grid on;
+title('log_5(2x + 4)');
+xlabel('x');
+ylabel('y');
+
+subplot(2, 3, 4);
+plot(x, y4, 'LineWidth', 2);
+grid on;
+title('1/x');
+xlabel('x');
+ylabel('y');
+
+subplot(2, 3, 5);
+plot(x, y5, 'LineWidth', 2);
+grid on;
+title('ln(x^2)');
+xlabel('x');
+ylabel('y');
+
+subplot(2, 3, 6);
+plot(x, y6, 'LineWidth', 2);
+grid on;
+title('ln(x)');
+xlabel('x');
+ylabel('y');
 zad13.3
 x = linspace(-2, 2, 1000);
 
